@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+body {
+	max-width: 1000px;
+	font-family: Verdana, Arial ,sans-serif;
+	padding: 0px;
+	margin: 0px;
+	margin: auto;
+	min-width: 420px;
+}
+
+nav {
+	height: 100px;
+	font-weight: bold;
+	margin: -11px 0px -20px 0px;
+	background-color: #526173;
+	color: #a2bebd;
+}
+
+header {
+	position: relative;
+	height: 400px;
+	margin: 0px 0px -20px 0px;
+	background-image: url('https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.slogan {
+	position: absolute;
+	float: left;
+	top: 25%;
+	left: 50px;
+	color: white;
+	font-family:  Constantia ,Georgia;
+}
+
+.slogan h1 {
+	font-size: 40px;
+	margin-bottom: -15px;
+}
+
+.slogan p {
+	font-family: Arial;
+}
+section {
+	height: auto;
+	background-color: #efefef;
+	margin: 0px 0px -20px 0px auto;
+	padding: 35px;
+	font-size: 10px;
+}
+
+section p,h2 {
+	margin: 15px;
+}
+
+section h2 {
+	font-size: 30px;
+}
+
+section img {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+}
+
+.footer {
+	padding: 15px;
+}
+.login {
+	margin: 15px auto;
+	padding: 30px;
+	border-radius: 5px;
+	border: 3px solid #4ba0e8;
+	width: 300px;
+	height: 150px;
+	background-color: #cfd8e0;
+	box-shadow: 5px 5px 5px grey;
+}
+
+footer {	
+	height: auto;
+	background-color: #f7f7f7;
+	font-size: 10px;
+	margin-bottom: 30px;
+	padding: 0px 35px 20px 35px;
+}
+
+footer h4 {
+	font-family:  Constantia, Georgia;
+	font-size: 16px;
+	margin-bottom: -5px;
+	color: #262524;
+}
+
+footer a {
+	text-decoration: none;
+	color: #64cef4;
+}
+
+
+ul {
+	list-style-type: none;
+	font-size: 11px;
+}
+
+li {
+	float: left;
+
+}
+
+li a {
+    display: inline-block;	
+    text-align: center;
+    padding: 10px 10px;
+	margin-top: 20px;
+    text-decoration: none;
+	font-size: 11px;
+}
+
+li a:link {
+	color: #ccd8d8;
+}
+
+li a:visited {
+    color: #8c867a;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+li.right {
+	float: right;
+}
+
+li.help {
+	margin-right: 50px;
+}
